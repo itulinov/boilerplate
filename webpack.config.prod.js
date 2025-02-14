@@ -16,7 +16,7 @@ const entryPoint = `
     catch(error) {
         Response.Write( tools.object_to_text({
             "success": false,
-            "error": error
+            "error": String(error)
         }, 'json') )
     }
 `
