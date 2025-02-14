@@ -42,7 +42,6 @@ function getQueryMode(mode) {
  */
 function getOverrideWebTemplateId(mode) {
     var ssql = getQueryMode(mode)
-    addLog(ssql)
     var overrideWebTemplate = ArrayOptFirstElem( XQuery(ssql) )
     if (overrideWebTemplate == undefined) {
         throw '"Incorrect template mode"'
